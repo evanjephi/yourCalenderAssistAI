@@ -15,9 +15,8 @@ from ai_assistant import AIAssistant
 
 def print_banner():
     """Print application banner."""
-    print("\n" + "=" * 60)
-    print("AI CALENDAR BOOKING ASSISTANT".center(60))
-    print("=" * 60)
+    #print("\n" + "=" * 60)
+    print("WELCOME to AI CALENDAR BOOKING ASSISTANT")
     print("Book meetings using simple English commands!\n")
 
 
@@ -63,8 +62,7 @@ def demo_with_example():
     print(f"  Time: {parsed['time_slots']['start_time']}-{parsed['time_slots']['end_time']}")
     print(f"  Duration: {parsed['time_slots']['duration']} hours")
     print(f"  Month: {parser._get_month_name(parsed['month'])} {parsed['year']}")
-    
-    # Generate dates
+
     print("\n Generating booking dates...")
     booking_dates = parser.generate_booking_dates(parsed)
     print(f"✓ Generated {len(booking_dates)} meeting dates:")
@@ -73,12 +71,10 @@ def demo_with_example():
     if len(booking_dates) > 5:
         print(f"   ... and {len(booking_dates) - 5} more dates")
     
-    # Get confirmation
     print("\n" + "=" * 60)
     result = assistant.process_booking_request(command, parsed)
     print(result['confirmation'])
-    
-    # Confirm booking
+
     should_book = input("\nYour choice: ").strip().lower() in ['yes', 'y']
     
     if should_book:
@@ -116,7 +112,6 @@ def interactive_mode():
     """Run interactive booking session."""
     print("\n" + "=" * 60)
     print("INTERACTIVE MODE")
-    print("=" * 60)
     
     current_date = datetime.now()
     parser = CalendarParser(current_date=current_date)
@@ -124,7 +119,6 @@ def interactive_mode():
     assistant = AIAssistant(use_openai=False)
     
     while True:
-        print("\n" + "-" * 60)
         user_input = input(
             "Enter booking command (or 'exit' to quit, 'help' for examples):\n> "
         ).strip()
