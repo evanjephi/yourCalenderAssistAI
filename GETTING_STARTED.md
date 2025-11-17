@@ -83,7 +83,7 @@ manager.book_meeting(
 )
 ```
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 # Full test suite
@@ -96,7 +96,7 @@ python examples.py
 python quick_test.py
 ```
 
-## 📚 Documentation
+##  Documentation
 
 | Document | Purpose |
 |----------|---------|
@@ -106,7 +106,7 @@ python quick_test.py
 | examples.py | Code examples for common scenarios |
 | demo.py | Automated demonstration |
 
-## ✨ Key Capabilities
+##  Key Capabilities
 
 ### Parse Natural Language
 ```
@@ -137,7 +137,7 @@ If attendees have overlapping bookings:
 - Reports specific conflicts
 - No data loss
 
-## 🎓 Example Commands
+##  Example Commands
 
 ### Team Meetings
 ```
@@ -161,7 +161,7 @@ schedule tech sync with John and Jane for Tuesdays and Thursdays
 at 13:00-13:45 in December
 ```
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 ```
 Natural Language Input
