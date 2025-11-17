@@ -99,7 +99,7 @@ def demo_with_example():
         )
         print(summary)
         
-        # Display calendars
+    
         print("\n INDIVIDUAL CALENDARS:")
         print("=" * 60)
         for attendee in parsed['attendees']:
@@ -135,7 +135,7 @@ def interactive_mode():
             continue
         
         try:
-            # Parse command
+    
             parsed = parser.parse_command(user_input)
             
             # Validate and show confirmation
