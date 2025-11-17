@@ -110,7 +110,6 @@ def main():
     print("\n" + "🧪 CALENDAR BOOKING APPLICATION TEST SUITE".center(70))
     
     try:
-        # Test parser
         parsed, parser = test_parser()
         
         # Test date generation
