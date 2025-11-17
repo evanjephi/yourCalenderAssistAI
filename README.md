@@ -2,17 +2,17 @@
 
 > A natural language calendar booking application that lets you schedule meetings across multiple users' calendars using simple English commands.
 
-## ✨ Features
+## Features
 
-- **🎯 Natural Language Processing**: Parse conversational commands like "book meetings with John, Jane, and Bob for Mondays and Wednesdays at 10:00-12:00 for month of December"
-- **👥 Multi-User Calendar Management**: Manage calendars for multiple attendees simultaneously
-- **⚠️ Conflict Detection**: Automatically detect scheduling conflicts across users
-- **📅 Flexible Scheduling**: Support for:
+- ** Natural Language Processing**: Parse conversational commands like "book meetings with John, Jane, and Bob for Mondays and Wednesdays at 10:00-12:00 for month of December"
+- ** Multi-User Calendar Management**: Manage calendars for multiple attendees simultaneously
+- ** Conflict Detection**: Automatically detect scheduling conflicts across users
+- ** Flexible Scheduling**: Support for:
   - Multiple attendees with flexible name formats
   - Multiple days of the week (single, multiple, or all weekdays)
   - Custom time slots with duration calculation
   - Month and year specification
-- **🤖 AI-Ready**: Built-in support for OpenAI integration for enhanced parsing
+- ** AI-Ready**: Built-in support for OpenAI integration for enhanced parsing
 - **💬 Interactive Mode**: Command-line interface for manual booking
 - **🎬 Demo Mode**: Pre-configured examples and test scenarios
 - **📊 Rich Output**: Detailed confirmations, summaries, and calendar displays
