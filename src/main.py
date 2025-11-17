@@ -16,9 +16,8 @@ from ai_assistant import AIAssistant
 def print_banner():
     """Print application banner."""
     print("\n" + "=" * 60)
-    print("🗓️  AI CALENDAR BOOKING ASSISTANT".center(60))
+    print("AI CALENDAR BOOKING ASSISTANT".center(60))
     print("=" * 60)
-    print("\nNatural Language Calendar Booking System")
     print("Book meetings using simple English commands!\n")
 
 
@@ -27,7 +26,7 @@ def print_instructions():
     print("USAGE EXAMPLES:")
     print("-" * 60)
     examples = [
-        "Book meetings with Alice, Bob, and Charlie for Mondays and Wednesdays at 10:00-12:00 for month of December",
+        "Book meetings with Evan, Efrem, and Haile for Mondays and Wednesdays at 10:00-12:00 for month of December",
         "Schedule meeting with John and Sarah for Fridays at 14:00-15:30 in December",
         "book 1-on-1s with team members for all weekdays 09:00-10:00 December",
     ]
@@ -45,7 +44,7 @@ def demo_with_example():
     # Example command
     command = "book meetings with Alice, Bob, and Charlie for Mondays and Wednesdays at 10:00-12:00 for month of December"
     
-    print(f"\n📝 Command: {command}\n")
+    print(f"\n Command: {command}\n")
     
     # Initialize components
     current_date = datetime(2025, 11, 16)  # Today's date in demo
@@ -54,7 +53,7 @@ def demo_with_example():
     assistant = AIAssistant(use_openai=False)  # Use local processing
     
     # Parse command
-    print("🔍 Parsing command...")
+    print(" Parsing command...")
     parsed = parser.parse_command(command)
     
     # Display parsed information
@@ -66,7 +65,7 @@ def demo_with_example():
     print(f"  Month: {parser._get_month_name(parsed['month'])} {parsed['year']}")
     
     # Generate dates
-    print("\n📅 Generating booking dates...")
+    print("\n Generating booking dates...")
     booking_dates = parser.generate_booking_dates(parsed)
     print(f"✓ Generated {len(booking_dates)} meeting dates:")
     for date in booking_dates[:5]:  # Show first 5
@@ -83,7 +82,7 @@ def demo_with_example():
     should_book = input("\nYour choice: ").strip().lower() in ['yes', 'y']
     
     if should_book:
-        print("\n📤 Processing bookings...\n")
+        print("\n Processing bookings...\n")
         
         # Book meetings
         booking_results = manager.book_meeting(
@@ -105,12 +104,12 @@ def demo_with_example():
         print(summary)
         
         # Display calendars
-        print("\n📋 INDIVIDUAL CALENDARS:")
+        print("\n INDIVIDUAL CALENDARS:")
         print("=" * 60)
         for attendee in parsed['attendees']:
             print(manager.display_calendar(attendee))
     else:
-        print("\n❌ Booking cancelled.")
+        print("\n Booking cancelled.")
 
 
 def interactive_mode():
@@ -131,7 +130,7 @@ def interactive_mode():
         ).strip()
         
         if user_input.lower() == 'exit':
-            print("\n👋 Goodbye!")
+            print("\n Goodbye!")
             break
         
         if user_input.lower() == 'help':
@@ -149,7 +148,7 @@ def interactive_mode():
             result = assistant.process_booking_request(user_input, parsed)
             
             if result['status'] == 'error':
-                print(f"\n❌ {result['confirmation']}")
+                print(f"\n {result['confirmation']}")
                 continue
             
             print(f"\n{result['confirmation']}")
@@ -161,7 +160,7 @@ def interactive_mode():
                 booking_dates = parser.generate_booking_dates(parsed)
                 
                 if not booking_dates:
-                    print("❌ No valid dates found for the specified criteria.")
+                    print(" No valid dates found for the specified criteria.")
                     continue
                 
                 booking_results = manager.book_meeting(
@@ -181,10 +180,10 @@ def interactive_mode():
                 )
                 print(summary)
             else:
-                print("\n❌ Booking cancelled.")
+                print("\n Booking cancelled.")
         
         except Exception as e:
-            print(f"\n❌ Error processing command: {e}")
+            print(f"\n Error processing command: {e}")
 
 
 def main():
@@ -207,10 +206,10 @@ def main():
         elif choice == '3':
             print_instructions()
         elif choice == '4':
-            print("\n👋 Thank you for using Calendar Booking Assistant!")
+            print("\n Thank you for using Calendar Booking Assistant!")
             break
         else:
-            print("❌ Invalid choice. Please try again.")
+            print(" Invalid choice. Please try again.")
 
 
 if __name__ == "__main__":
