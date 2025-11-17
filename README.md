@@ -40,7 +40,7 @@ pip install -r requirements.txt
 python src/main.py
 ```
 
-## 📖 Usage
+## Usage
 
 ### Interactive Application
 
@@ -58,17 +58,17 @@ python src/main.py
 
 ### Example Commands
 
-#### 👥 Team Meeting (3 people, twice per week)
+#### Team Meeting (3 people, twice per week)
 ```
 book meetings with Alice, Bob, and Charlie for Mondays and Wednesdays at 10:00-12:00 for month of December
 ```
 
-#### 📢 Daily Standup (all weekdays)
+####  Daily Standup (all weekdays)
 ```
 schedule standup with team for all weekdays 09:00-10:00 December
 ```
 
-#### 💬 1-on-1 Meetings (specific days)
+####  1-on-1 Meetings (specific days)
 ```
 book 1-on-1 with Sarah for Fridays at 14:00-15:00 in December
 ```
