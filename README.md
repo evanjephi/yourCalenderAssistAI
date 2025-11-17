@@ -152,16 +152,16 @@ Application interface
 | **MONTH** | December, Dec, December 2025 | Month name and optional year |
 
 ### Valid Examples
-✅ "book meeting with John for Monday at 10:00-11:00 December"
-✅ "schedule sync with Alice and Bob for Mondays and Wednesdays 14:00-15:00 Dec 2025"
-✅ "book standup with team for all weekdays 09:00-10:00 in December"
-✅ "plan 1-on-1 with Sarah for Fridays at 15:00-15:30 December"
+"book meeting with John for Monday at 10:00-11:00 December"
+"schedule sync with Alice and Bob for Mondays and Wednesdays 14:00-15:00 Dec 2025"
+"book standup with team for all weekdays 09:00-10:00 in December"
+"plan 1-on-1 with Sarah for Fridays at 15:00-15:30 December"
 
-## 📊 Output Examples
+## Output Examples
 
 ### Booking Confirmation
 ```
-📅 Booking Confirmation
+Booking Confirmation
 ========================================
 Attendees: Alice, Bob, Charlie
 Days: Monday, Wednesday
