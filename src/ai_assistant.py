@@ -4,9 +4,7 @@ from typing import Dict, Optional
 import os
 
 
-class AIAssistant:
-    """AI-powered assistant for calendar booking operations."""
-    
+class AIAssistant:    
     def __init__(self, use_openai: bool = False, api_key: Optional[str] = None):
         """
         Initialize the AI assistant.
