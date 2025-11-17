@@ -6,13 +6,6 @@ import os
 
 class AIAssistant:    
     def __init__(self, use_openai: bool = False, api_key: Optional[str] = None):
-        """
-        Initialize the AI assistant.
-        
-        Args:
-            use_openai: Whether to use OpenAI API (requires API key)
-            api_key: OpenAI API key (if use_openai is True)
-        """
         self.use_openai = use_openai
         self.api_key = api_key or os.getenv('OPENAI_API_KEY')
         
