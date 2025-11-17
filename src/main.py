@@ -80,7 +80,7 @@ def demo_with_example():
     if should_book:
         print("\n Processing bookings...\n")
         
-        # Book meetings
+
         booking_results = manager.book_meeting(
             attendees=parsed['attendees'],
             dates=booking_dates,
@@ -90,7 +90,7 @@ def demo_with_example():
             title="Team Meeting"
         )
         
-        # Display summary
+       
         summary = assistant.generate_booking_summary(
             attendees=parsed['attendees'],
             dates=booking_dates,
