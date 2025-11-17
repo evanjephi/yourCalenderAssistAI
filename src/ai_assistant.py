@@ -1,8 +1,3 @@
-"""
-AI assistant for calendar booking using OpenAI API or local processing.
-This module provides intelligent parsing and confirmation of booking requests.
-"""
-
 import json
 from datetime import datetime
 from typing import Dict, Optional
